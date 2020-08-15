@@ -6,7 +6,7 @@ import (
 	"github.com/labstack/echo"
 )
 
-func Index() echo.HandlerFunc {
+func Home() echo.HandlerFunc {
 	return func(c echo.Context) error {
 		return c.String(http.StatusOK, "Index.")
 	}

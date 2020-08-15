@@ -10,8 +10,8 @@ func main() {
 	e := echo.New()
 
 	// ルーティング
-	e.GET("/", handler.Index())
-	e.GET("/api/hello", handler.Hello())
+	e.GET("/", handler.Home())
+	e.GET("/hello", handler.Hello())
 
 	// サーバー起動
 	e.Start(":8080")
