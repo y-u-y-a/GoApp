@@ -1,7 +1,8 @@
 package main
 
 import (
-	"./handler"
+	// ディレクトリ名を指定
+	"./external"
 	"github.com/labstack/echo"
 )
 
@@ -10,8 +11,9 @@ func main() {
 	e := echo.New()
 
 	// ルーティング
-	e.GET("/", handler.Home())
-	e.GET("/hello", handler.Hello())
+	// ディレクトリ名で呼び出し
+	e.GET("/", external.Home())
+	e.GET("/hello", external.Hello())
 
 	// サーバー起動
 	e.Start(":8080")

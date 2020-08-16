@@ -1,4 +1,5 @@
-package handler
+// ディレクトリ名を指定
+package external
 
 import (
 	"net/http"
